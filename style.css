@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@keyframes mars {
+  0% {
+    background-color: aqua;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    background-color: red;
+    top: 0;
+    left: calc(100% - 100px);
+  }
+  50% {
+    background-color: pink;
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+  }
+  75% {
+    background-color: black;
+    top: calc(100% - 100px);
+    left: 0;
+  }
+  100% {
+    background-color: orange;
+    top: 0;
+    left: 0;
+  }
+}
+.box {
+    position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: mars;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
